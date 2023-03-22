@@ -13,15 +13,15 @@
 // var title = "Harry Potter";
 // var ...
 
-var title = "A Court of Thornes and Roses";
-var pageCount = 448;
+var title = "A Court of Thorns and Roses";
+var pages = 448;
 
 // Reassign (not initialize) your "pages" variable from above. An editor came around and
 // condensed the book, use a built in math operator to make the page count a quarter
 // of what it currently is 
 
-pageCount = 448/4;
-console.log(pageCount);
+pages = 448/4;
+console.log(pages);
 
 // Initialize a new variable "movie", but leave it undefined
 
@@ -36,7 +36,7 @@ console.log(sequel);
 // Initialize a new variable "isFavorite", and assign it to a boolean value indicating
 // if the book you chose is your favorite book or not
 
-var isFavorite = true
+var isFavorite = true;
 
 
 // Create a new variable named "isShortStory", and use a comparison operator to
@@ -44,7 +44,7 @@ var isFavorite = true
 // variable should be true, otherwise it should be false. You MUST use a
 // comparison operator.
 
-var isShortStory = pageCount < 150
+var isShortStory = pages < 150
 console.log(isShortStory);
 
 //------------------------- Conditionals -------------------------//
@@ -55,13 +55,24 @@ console.log(isShortStory);
 // 'Ok, maybe I could read that in a day and a half'
 
 
+if (pages < 1000) {
+    console.log("I could read that in a day!");
+} else {
+    console.log("Okay, maybe I could that in a day and a half");
+}
+
+
 
 // Express the following in code: If the variable "isFavorite" is true,
 // log the statement 'My favorite book is [title]!'. Otherwise, log the
 // statement 'I recently read the [title] book'. In either case, the value stored in
 // the "title" variable should be included in the logged statement.
 
-
+if (isFavorite === true) {
+    console.log("My favorite book is " + title);
+} else {
+    console.log("I recently read the " + title + " book.");
+}
 
 //------------------------- Arrays -------------------------//
 
