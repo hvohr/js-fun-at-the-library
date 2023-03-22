@@ -61,8 +61,6 @@ if (pages < 1000) {
     console.log("Okay, maybe I could that in a day and a half");
 }
 
-
-
 // Express the following in code: If the variable "isFavorite" is true,
 // log the statement 'My favorite book is [title]!'. Otherwise, log the
 // statement 'I recently read the [title] book'. In either case, the value stored in
@@ -80,17 +78,21 @@ if (isFavorite === true) {
 // Create a new variable "books" and assign it to an Array of 5 different
 // book titles, represented by their names as Strings.
 
+var books = ["Harry Potter", "The Murmur of Bees", "Pride and Prejudice", "Percy Jackson", "Lord of the Rings"];
 
 // Write the code to access the 3rd element of the Array, using bracket
 // notation.
 
+console.log(books[2]);
 
 // Create a new variable "belowTwoHundred" and assign it to an Array of 12
 // different numbers below two hundred.
 
+var belowTwoHundred = [34, 56, 76, 2, 43, 9, 13, 44, 84, 99, 11, 12];
 
 // Write the code to access the 5th element of the array, using bracket notation.
 
+console.log(belowTwoHundred[4]);
 
 //------------------------- Objects -------------------------//
 
