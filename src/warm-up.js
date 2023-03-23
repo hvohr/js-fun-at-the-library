@@ -44,7 +44,8 @@ var isFavorite = true;
 // variable should be true, otherwise it should be false. You MUST use a
 // comparison operator.
 
-var isShortStory = pages < 150
+var isShortStory = pages < 25
+
 console.log(isShortStory);
 
 //------------------------- Conditionals -------------------------//
