@@ -32,9 +32,10 @@ function writeBook(title, character, bookGenre) {
   return book;
 };
 
-function editBook() {
-  
-}
+
+function editBook(book) {
+   return book.pageCount *= .75;
+};
 
 
 module.exports = {
