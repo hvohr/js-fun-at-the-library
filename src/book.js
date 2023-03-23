@@ -3,9 +3,19 @@ function createTitle(title) {
   return bookIdea;
 }
 
+function buildMainCharacter(name, age, pronouns) {
+  var character = {
+    name: name,
+    age: age,
+    pronouns: pronouns
+  }
+  return character;
+};
+
+
 module.exports = {
   createTitle,
-  // buildMainCharacter,
+  buildMainCharacter,
   // saveReview,
   // calculatePageCount,
   // writeBook,
