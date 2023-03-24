@@ -10,7 +10,9 @@ function createLibrary(name) {
   return library
 };
 
-
+function addBook(library, book) {
+  library.shelves[book.genre].push(book);
+};
 
 
 module.exports = {
