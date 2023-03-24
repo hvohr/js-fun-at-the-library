@@ -4,10 +4,17 @@ function shelfBook(book, shelf) {
   }
 };
 
+function unshelfBook(title, shelf) {
+  for (var i = 0; i < shelf.length; i++) {
+    if (shelf[i].title === title) {
+      return shelf.splice(i, 1)
+  }
+}
+}
 
 module.exports = {
   shelfBook,
-  // unshelfBook,
+  unshelfBook,
   // listTitles,
   // searchShelf
 };
