@@ -28,11 +28,13 @@ if (bookExist === true) {
 }
 }
 
-
-
-function takeStock(library,genre){
-  return `There are a total of ${library.shelves[genre].length} ${genre} books at the ${library.name}.`
-} 
+function takeStock(library, genre) {
+  if (!genre) {
+    return `There are a total of ${Object.values(library.shelves).length} books at the ${library.name}.`
+  } else {
+    return `There are a total of ${library.shelves[genre].length} ${genre} books at the ${library.name}.`
+  }
+}
 
 module.exports = {
   createLibrary,
